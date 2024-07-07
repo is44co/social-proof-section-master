@@ -129,15 +129,140 @@ color: hsl(333, 80%, 67%);
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        
+        overflow-x: hidden;
     }
     .container{
+        width: 100vw;
+
+        max-width: 100%;
      display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 flex: 1;
-     background-color:#8b9e52;
+    
 
         }
+        .container .up{
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 130px 30px;
+            overflow: hidden;
+            text-align: center;
+        }
+       
+        .container .up .left {
+            text-align: center;
+            margin: 10px 10px;
+            width: 100%;
+            max-width: 100%;
+        }
+        .container .up .left h1{
+            font-size: 3em;
+            width: 350px;
+            margin-left: 50px;
+            color:#4d1f4f ;
+            text-align: center;
+        
+        }
+        .container .up .left p{
+          text-align: right;
+            color:hsl(303, 10%, 53%) ;
+            font-size: 25px;
+            font-weight: 400;
+           
+            width: 50%;
+            
+           
+        }
+        .container .right{
+       
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            color: aliceblue;
+            
+            
+        }
+        .container .right .child{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+padding: 30px 30px;
+        margin: 30px 0;
+        color: hsl(303, 10%, 53%);
+        background-color: hsl(300, 24%, 96%);
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: ;
+         
+        }
+        .container .right .child:nth-child(1){
+            width: 70%;
+            margin-left: 50px;
+           
+        }
+        .container .right .child:nth-child(2){
+        width: 70%;
+        margin-left: 50px;
+        }
+        .container .right .child:nth-child(3){
+            width: 70%;
+            margin-left: 50px;
+        }
+        .container .down{
+            margin-left: 10px;
+            width:600px;
+            max-width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+       align-items: center;
+          gap: 40px; 
+         margin-bottom: 50px;
+         
+         }
+         .container .down .card{
+            background-color: #4d1f4f;
+             margin: 30px;
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+         border-radius: 10px;
+         }
+         .container .down .card .title{
+             display: flex;
+           gap: 50px;
+         padding: 15px 10px;
+         color: hsl(333, 80%, 67%);
+         }
+         .container .down .card img{
+             border-radius: 50%;
+            background-color: aqua;
+             margin-left:10px;
+         
+         }
+         .container .down .card .wrap{
+           
+            margin-top: 15px;
+            text-align: start;
+          
+         }
+         .container .down .card >p{
+             padding: 10px 30px;
+             line-height: 1.2;
+             font-weight: 400;
+             color: white;
+             font-size: 19px;
+             padding-bottom: 40px;
+         }
+         .container .down .card h3{
+             color: white;
+             padding: 5px 0;
+         }
        
 }
