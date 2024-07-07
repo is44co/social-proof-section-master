@@ -6,26 +6,33 @@
 }
 body{
     font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+
+}
+.container{
 
 }
 .container .up{
     
     display: flex;
     justify-content: space-around;
-    margin: 150px auto;
+    margin: 130px auto;
 }
 .container .up .left{
     width: 30%;
-    background-color: aqua;
+   
 }
 .container .up .left h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
+    
     color:#4d1f4f ;
 
 }
 .container .up .left p{
     margin: 30px 0;
     color:hsl(303, 10%, 53%) ;
+    font-size: 25px;
+    font-weight: 400;
    
 }
 .container .right{
@@ -41,7 +48,7 @@ display: flex;
 margin: 20px;
 color: hsl(303, 10%, 53%);
 background-color: hsl(300, 24%, 96%);
-padding: 10px;
+padding: 15px;
 border-radius: 5px;
  
 }
@@ -61,4 +68,76 @@ margin-left: 50px;
 .container .right .child:nth-child(3){
     width: 80%;
     margin-left: 70px;
+}
+
+.container .down{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr) ) ;
+ gap: 40px; 
+ margin: 0 180px;
+
+
+
+}
+.container .down .card{
+   background-color: #4d1f4f;
+    margin: 30px;
+display: flex;
+flex-direction: column;
+text-align: start;
+border-radius: 10px;
+}
+.container .down .card .title{
+    display: flex;
+  gap: 50px;
+padding: 15px 10px;
+color: hsl(333, 80%, 67%);
+}
+.container .down .card img{
+    border-radius: 50%;
+   background-color: aqua;
+    margin-left:10px;
+
+}
+.container .down .card .wrap{
+  
+   margin-top: 15px;
+   text-align: start;
+ 
+}
+.container .down .card >p{
+    padding: 10px 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: white;
+    font-size: 19px;
+    padding-bottom: 40px;
+}
+.container .down .card h3{
+    color: white;
+    padding: 5px 0;
+}
+.container .down .card :nth-child(1){
+    margin-top: ;
+}
+.container .down .card :nth-child(2){
+    margin-top: ;
+}
+.container .down .card :nth-child(3){
+    margin-top: ;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    .container{
+     display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+flex: 1;
+     background-color:#8b9e52;
+
+        }
+       
 }
